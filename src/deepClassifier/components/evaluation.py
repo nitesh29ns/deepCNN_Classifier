@@ -33,7 +33,7 @@ class Evaluation:
 
 
     @staticmethod
-    def load_model(path: Path) -> tf.keras.Model:
+    def load_model(path: Path): 
         return tf.keras.models.load_model(path)
 
 
