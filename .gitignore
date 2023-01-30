@@ -136,3 +136,11 @@ dmypy.json
 *.jpg
 *.zip
 *.png
+artifacts/prepare_base_model/base_model.h5
+artifacts/prepare_base_model/base_model_updated.h5
+artifacts/prepare_callbacks/checkpoint_dir/model.h5
+artifacts/prepare_callbacks/tensorboard_log_dir/*
+artifacts/training/model.h5
+mlruns/*
+research/mlflow_dir/mlruns/*
+prediction_service/model.h5
