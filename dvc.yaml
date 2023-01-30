@@ -26,7 +26,7 @@ stages:
     cmd: python src/deepClassifier/pipeline/stage_3_training_model.py
     deps:
       - src/deepClassifier/pipeline/stage_3_training_model.py
-      - src/deepClassifier/components/prepare_callback.py
+      - src/deepClassifier/components/prepare_callbacks.py
       - configs/config.yaml
       - artifacts/data_ingestion/PetImages
       - artifacts/prepare_base_model
@@ -39,9 +39,9 @@ stages:
       - artifacts/training/model.h5
 
   evaluation:
-    cmd: python src/deepClassifier/pipeline/stage_04_evaluation.py
+    cmd: python src/deepClassifier/pipeline/stage_4_evaluation.py
     deps:
-      - src/deepClassifier/pipeline/stage_04_evaluation.py
+      - src/deepClassifier/pipeline/stage_4_evaluation.py
       - configs/config.yaml
       - artifacts/data_ingestion/PetImages
       - artifacts/training/model.h5
